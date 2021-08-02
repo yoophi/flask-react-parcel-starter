@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <title>Flask React Parcel Starter</title>
+  </head>
+  <body>
+    <h1>pages/two</h1>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <ul>
+			<li> <a href="{{ url_for('index') }}">index</a> </li>
+			<li> <a href="{{ url_for('page_one') }}">page one</a> </li>
+			<li> <a href="{{ url_for('page_two') }}">page two</a> </li>
+    </div>
+    <script src="{{ url_for('static', filename='dist/pages/two.js') }}"></script>
+  </body>
+</html>
